@@ -591,7 +591,43 @@ ul {
 .footer-form {
   display: block;
   margin-top: 66px;
-  margin-bottom: 100px;
+  margin-bottom: 170px;
+  width: auto;
+}
+
+.title-footer-form {
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--pimary-white-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-form-btn {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  position: relative;
+  text-align: center;
+
+  color: var(--pimary-white-color);
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 62px;
+}
+
+.submit-icon-footer {
+  fill: var(--pimary-white-color);
+  position: absolute;
+  bottom: 13px;
+  right: 28px;
 }
 
 /* portfolio */
