@@ -490,6 +490,7 @@ ul {
 }
 
 /* footer */
+
 .footer {
   background-color: var(--primary-background-color);
 }
@@ -550,7 +551,7 @@ ul {
 .footlist {
   padding-left: 70;
   margin-left: 70px;
-  margin-right: auto;
+  margin-right: 93px;
   margin-top: 72px;
   margin-bottom: 100px;
 }
@@ -585,6 +586,12 @@ ul {
 
 .footer-link:hover {
   background-color: var(--accent-color);
+}
+
+.footer-form {
+  display: block;
+  margin-top: 66px;
+  margin-bottom: 100px;
 }
 
 /* portfolio */
