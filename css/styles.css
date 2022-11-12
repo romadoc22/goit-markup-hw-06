@@ -589,10 +589,18 @@ ul {
 }
 
 .footer-form {
-  display: block;
-  margin-top: 66px;
-  margin-bottom: 170px;
-  width: auto;
+  display: flex;
+  align-items: flex-end;
+  /* gap: 12px; */
+}
+
+.footer-form input {
+  width: 360px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-top: 20px;
+  margin-left: auto;
 }
 
 .title-footer-form {
@@ -601,8 +609,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--pimary-white-color);
-
-  margin-bottom: 20px;
 }
 
 .footer-form-btn {
