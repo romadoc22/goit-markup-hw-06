@@ -425,9 +425,8 @@
         </ul>
       </div>
       <div class="footer-form">
-        <h3 class="title-footer-form">Підпишіться на розсилку</h3>
-        <div class="footer-form-mail"></div>
-        <label for="mail"><input type="email" name="mail" id="mail" required>
+        <label for="mail"><span class="title-footer-form">Підпишіться на розсилку</span>
+          <input type="email" name="mail" placeholder="E-mail" required>
         </label>
         <button type="submit" class="footer-form-btn">
           Підписатися
@@ -438,7 +437,7 @@
         </button>
       </div>
     </div>
-    
+
 
 
 
@@ -479,12 +478,14 @@
             <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
           </div>
 
-          <div class="checkbox">
-            <input type="checkbox" name="policy" id="policy">
-            <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
-          </div>
 
 
+          <label class="checkbox-label">
+            <input class="checkbox" type="checkbox" name="policy">
+            <span class="check"></span>
+            Погоджуюся з розсилкою та приймаю <span class="check-dog">Умови договору</span>
+
+          </label>
           <button type="submit" class="submit-btn">Відправити</button>
         </form>
       </div>

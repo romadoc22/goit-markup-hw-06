@@ -475,10 +475,6 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .icon-clients:hover {
-  fill: var(--accent-color);
-} */
-
 .title-clients {
   text-align: center;
   padding-top: 94px;
@@ -824,10 +820,17 @@ a {
   top: 0;
   right: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--pimary-white-color);
   border-radius: 50%;
   margin-top: 8px;
   margin-right: 8px;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modalbtn:focus,
+.modalbtn:hover {
+  fill: var(--accent-color);
 }
 
 .form {
@@ -877,7 +880,7 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1666;
-  color: #757575;
+  color: var(--title-tex-color);
 }
 
 .modal-form-input {
@@ -887,6 +890,18 @@ a {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:hover + .modal-form-input-icon,
+.modal-form-input:focus + .modal-form-input-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-input:hover,
+.modal-form-input:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .modal-form-input-icon {
@@ -894,10 +909,13 @@ a {
   position: absolute;
   top: 50%;
   left: 12px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox {
-  text-align: center;
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 
   font-size: 14px;
@@ -906,25 +924,56 @@ a {
   color: var(--title-tex-color);
 }
 
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .check {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/SVG/icons/iconcheck.svg);
+  background-repeat: no-repeat;
+}
+.check-dog {
+  display: block;
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-underline-position: under;
+  margin-left: 5px;
+}
+
 .submit-btn {
-  display: flex;
-  align-items: center;
+  display: block;
   text-align: center;
-  padding: 10px 52px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
-  width: 200px;
-  height: 50px;
+  padding: 10px 52px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--pimary-white-color);
-
-  background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   cursor: pointer;
-  border: none;
 }
